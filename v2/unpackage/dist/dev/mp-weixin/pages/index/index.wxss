@@ -1,0 +1,123 @@
+
+.container {
+	display: flex;
+	height: 100vh;
+	background-color: #F8FAFC;
+}
+.type-nav {
+	width: 200rpx;
+	background-color: #fff;
+	height: 100%;
+	box-shadow: 2rpx 0 10rpx rgba(0,0,0,0.05);
+}
+.type-item {
+	padding: 40rpx 20rpx;
+	text-align: center;
+	position: relative;
+	transition: all 0.3s ease;
+}
+.type-item.active {
+	background-color: #F0F7FF;
+	color: #4B9EF9;
+}
+.type-item.active::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	        transform: translateY(-50%);
+	width: 6rpx;
+	height: 40rpx;
+	background-color: #4B9EF9;
+	border-radius: 0 3rpx 3rpx 0;
+}
+.type-text {
+	font-size: 28rpx;
+	line-height: 1.4;
+}
+.symptom-list {
+	flex: 1;
+	height: calc(100vh - 120rpx);
+	padding: 30rpx;
+}
+.list-header {
+	margin-bottom: 40rpx;
+	padding: 20rpx 0;
+}
+.header-title {
+	display: block;
+	font-size: 32rpx;
+	color: #333;
+	font-weight: 500;
+	margin-bottom: 10rpx;
+}
+.header-subtitle {
+	font-size: 24rpx;
+	color: #999;
+}
+.symptom-card {
+	background-color: #fff;
+	border-radius: 16rpx;
+	padding: 30rpx;
+	margin-bottom: 24rpx;
+	box-shadow: 0 2rpx 12rpx rgba(0,0,0,0.04);
+	transition: all 0.3s ease;
+}
+.symptom-card:active {
+	-webkit-transform: scale(0.98);
+	        transform: scale(0.98);
+}
+.symptom-name {
+	font-size: 30rpx;
+	color: #333;
+	margin-bottom: 24rpx;
+}
+.symptom-score {
+	display: flex;
+	align-items: center;
+}
+.stars {
+	display: flex;
+	margin-right: 20rpx;
+}
+.star {
+	color: #E1E8F0;
+	font-size: 44rpx;
+	padding: 0 4rpx;
+	transition: color 0.2s ease;
+}
+.star.active {
+	color: #FFB400;
+}
+.score-text {
+	color: #666;
+	font-size: 26rpx;
+	min-width: 60rpx;
+	font-weight: 500;
+}
+.bottom-button {
+	position: fixed;
+	bottom: 0;
+	left: 200rpx;
+	right: 0;
+	padding: 30rpx 40rpx;
+	background: linear-gradient(180deg, rgba(255,255,255,0) 0%, #fff 20%);
+}
+.bottom-button button {
+	background: linear-gradient(135deg, #4B9EF9 0%, #2F86F6 100%);
+	color: #fff;
+	border-radius: 45rpx;
+	font-size: 32rpx;
+	height: 90rpx;
+	line-height: 90rpx;
+	font-weight: 500;
+	box-shadow: 0 6rpx 20rpx rgba(75,158,249,0.3);
+	transition: all 0.3s ease;
+}
+.bottom-button button:active {
+	-webkit-transform: translateY(2rpx);
+	        transform: translateY(2rpx);
+	box-shadow: 0 2rpx 10rpx rgba(75,158,249,0.2);
+}
+
